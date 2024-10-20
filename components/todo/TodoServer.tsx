@@ -73,13 +73,12 @@ export default async function TodoServer({ todos }: { todos: Todo[] }) {
                 <td className="px-4 py-2">
                   {formatDate(todo.created_at as unknown as number)}
                 </td>
-                {/*
-                <td className="px-4 py-2">
-                  <form>
-                    <Button formAction={() => deleteTodo(todo.id)}>x</Button>
+                {/*<td className="px-4 py-2">
+                  <form action={deleteTodo(todo.id)}>
+                    <input type="text" name="id" />
+                    <button type="submit">Update</button>
                   </form>
-                </td>
-                */}
+                </td>*/}
               </tr>
             ))}
           </tbody>
